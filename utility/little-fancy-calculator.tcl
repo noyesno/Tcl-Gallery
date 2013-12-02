@@ -96,7 +96,7 @@ foreach key {
     switch -- $key {
         e       {set keytext $::timesTenToTheN}
         /       {set keytext $::mathDivide}
-{set keytext $::mathTimes}
+        *       {set keytext $::mathTimes}
         -       {set keytext $::mathMinus}
         default {set keytext $key}
     }
